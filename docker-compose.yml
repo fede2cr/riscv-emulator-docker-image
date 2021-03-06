@@ -1,0 +1,10 @@
+version: "2"
+
+services:
+    qemu-riscv-debian:
+        build: ./qemu-riscv-debian
+        ports:
+            - 2222:2222
+            - 10245:10245 
+            - 8765:8765
+        image: fede2/qemu-riscv-debian-icecc
